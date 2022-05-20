@@ -1,0 +1,17 @@
+.icons {
+    display: flex;
+    float: right;
+}
+
+.icons i {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    display: flex;
+    float: right;
+}

@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 mt-4">
+      <h2>Proyectos</h2>
+    </div>
+    <div>
+      <button (click)="Add()" class="btn btn-success d-flex float">
+        + Nuevo proyecto
+      </button>
+    </div>
+    <ul class="items-list">
+      <li>
+        <div class="card m-3 col-12 col-md-12 p-4 shadow hover-shadow">
+          <div class="card-header bg-dark text-white">
+            <h3>
+              <div class="icons">
+                <a href="/edit-project">
+                  <i class="fa-solid fa-pen-to-square fa-lg text-info"></i>
+                </a>
+                <a>
+                  <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+                </a>
+              </div>
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <img src="" alt="img.jpg" align="left" />
+              <div class="col-4">
+                <p class="mt-2">
+                  <time> </time>
+                </p>
+              </div>
+              <div class="col-8">Descripción:</div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <hr class="mt-4" />
+  </div>
+</div>

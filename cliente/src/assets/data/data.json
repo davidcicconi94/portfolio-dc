@@ -1,0 +1,25 @@
+{
+    "name": "David Cicconi",
+    "myImg": "../../../assets/yo.jpg",
+    "position": "Fullstack Developer Jr.",
+    "city": "Rosario, Santa Fe (Argentina)",
+    "phone": "3412613141",
+    "mail": "david.cicconi94@gmail.com",
+    "aboutMe": "asdasdasda asd",
+
+    "experience": [{
+        "name": "Heladeria San Remo",
+        "time": "2021-Presente",
+        "description": "Hola san remo"
+    },
+{
+    "name": "Heladeria Charlot",
+    "time": "2021",
+    "description": "Putos de mierda"
+}],
+    "education": [{
+        "place": "Esc. N° 49 Gral Urquiza",
+        "time": "2019-2020",
+        "status": "Incompleto"
+    }]
+}
