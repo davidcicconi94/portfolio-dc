@@ -12,13 +12,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { FormComponent } from './components/form/form.component';
 import { ServiceService } from './service/service.service';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AptitudesComponent } from './components/aptitudes/aptitudes.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { EducationComponent } from './components/education/education.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddExpComponent } from './functions/add-exp/add-exp.component';
 import { EditExpComponent } from './functions/edit-exp/edit-exp.component';
 import { EditEduComponent } from './functions/edit-edu/edit-edu.component';
@@ -26,6 +26,9 @@ import { AddEduComponent } from './functions/add-edu/add-edu.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AddProjectComponent } from './functions/add-project/add-project.component';
 import { EditProjectComponent } from './functions/edit-project/edit-project.component';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,7 @@ import { EditProjectComponent } from './functions/edit-project/edit-project.comp
     ProjectsComponent,
     AddProjectComponent,
     EditProjectComponent,
+    AddExpComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +57,10 @@ import { EditProjectComponent } from './functions/edit-project/edit-project.comp
     MatSliderModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule,
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent],

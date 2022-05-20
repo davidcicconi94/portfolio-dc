@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Empleo } from 'src/app/model/Empleo';
 import { ServiceService } from 'src/app/service/service.service';
 
 @Component({
@@ -9,11 +10,13 @@ import { ServiceService } from 'src/app/service/service.service';
 })
 export class ExperienceComponent implements OnInit {
   experienciaList: any;
+  empleos: Empleo[] = [];
+
   constructor(private datosPortfolio: ServiceService, private router: Router) {}
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe((data) => {
-      this.experienciaList = data.experience;
+      this.empleos = data;
     });
   }
 

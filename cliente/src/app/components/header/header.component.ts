@@ -14,9 +14,7 @@ export class HeaderComponent implements OnInit {
   constructor(private datosPortfolio: ServiceService) {}
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe((data) => {
-      console.log(this.isButtonVisible);
-    });
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {});
   }
 
   toggle() {

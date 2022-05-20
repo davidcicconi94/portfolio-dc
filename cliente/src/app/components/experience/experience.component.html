@@ -9,11 +9,11 @@
       </button>
     </div>
     <ul class="items-list">
-      <li *ngFor="let experiencia of experienciaList">
+      <li *ngFor="let empleo of empleos">
         <div class="card m-3 col-12 col-md-12 p-4 shadow hover-shadow">
           <div class="card-header bg-dark text-white">
             <h3>
-              {{ experiencia.name }}
+              {{ empleo.empresa }}
               <div class="icons">
                 <a href="/edit-exp">
                   <i class="fa-solid fa-pen-to-square fa-lg text-info"></i>
@@ -29,11 +29,12 @@
               <img src="" alt="img.jpg" align="left" />
               <div class="col-4">
                 <p class="mt-2">
-                  <time> {{ experiencia.time }} </time>
+                  <time> {{ empleo.periodo }} </time>
                 </p>
               </div>
               <div class="col-8">
-                Descripción: {{ experiencia.description }}
+                <p>Puesto: {{ empleo.puesto }}</p>
+                <p>Descripción: {{ empleo.descripcion }}</p>
               </div>
             </div>
           </div>

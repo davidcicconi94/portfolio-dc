@@ -13,9 +13,7 @@ export class EducationComponent implements OnInit {
   constructor(private datosPortfolio: ServiceService, private router: Router) {}
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe((data) => {
-      this.educationList = data.education;
-    });
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {});
   }
 
   isButtonVisible = true;

@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   constructor(private datosPortfolio: ServiceService) {}
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe((data) => {
+    this.datosPortfolio.aboutMe().subscribe((data) => {
       this.miPortfolio = data;
     });
   }
